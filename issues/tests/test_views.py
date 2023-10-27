@@ -124,8 +124,7 @@ class CommentDetailTestCase(APITestCase):
         response = self.client.get(f"/api/issues/{self.issue.id}/comments/{self.comment.id}/")
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
-    # ... Tests for update and delete ...
-
+    
 
 
 class IssueAssignTestCase(APITestCase):
